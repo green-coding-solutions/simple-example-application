@@ -1,0 +1,59 @@
+{
+    "name": "Test-Scenario",
+    "author": "Arne Tarara",
+    "version": 1.0,
+    "architecture": "linux",
+    "setup": [
+        {
+            "name": "Small_load_Container",
+            "type":"container",
+            "identifier": "quoinedev/python3.7-pandas-alpine",
+            "portmapping": "9000:80",
+            "setup-commands" : [
+                "whoami",
+                "python3 -m pip install pandas"
+            ]
+        },
+        {
+            "name": "High_load_Container",
+            "type":"container",
+            "identifier": "quoinedev/python3.7-pandas-alpine",
+            "portmapping": "9001:80",
+            "setup-commands" : [
+                "python3 -m pip install pandas"
+            ]
+        }
+    ],
+    "flow": [
+        {
+            "name": "Load 1000",
+            "container": "Small_load_Container",
+            "commands": [
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 10000000", "detach": true},
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+            ]
+        },
+        {
+            "name": "Load 10000000",
+            "container": "High_load_Container",
+            "commands": [
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 100000000", "detach": true},
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+            ]
+        },
+        {
+            "name": "Cleanup small load",
+            "container": "Small_load_Container",
+            "commands": [
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+            ]
+        },
+        {
+            "name": "Cleanup high load",
+            "container": "High_load_Container",
+            "commands": [
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+            ]
+        }
+    ]
+}
