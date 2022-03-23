@@ -25,9 +25,6 @@ def run(n):
     result = lm.fit(X,y)
     print("LM Score: ", result.score(X,y))
 
-def cleanup():
-    print("TODO")
-
 ## Actual starting point of the code
 
 import argparse
@@ -42,19 +39,18 @@ opt_group.add_argument("-u", type=str, help="Specify a url to load dataframe fro
 args = parser.parse_args()
 
 if args.mode == 'run':
-    print(f"Doing run")
-    if args.n != None and args.n != '':
+    print("Doing run")
+    if args.n is not None and args.n != '':
         print("Amount detected: %d" % args.n)
         run(args.n)
-    elif args.u != None and args.u != '':
+    elif args.u is not None and args.u != '':
         print("Fetching url: %s" % args.u)
         print("TODO")
-        # fetch ur
     else:
         print("Please supply -n or -u argument")
 elif args.mode == 'cleanup':
-    print(f"Doing cleanup")
-    cleanup()
+    print("Doing cleanup")
+    print("TODO")
 else:
     print(f"Error: Unknown mode {args.mode}\n")
     parser.print_help()

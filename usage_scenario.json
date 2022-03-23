@@ -6,7 +6,7 @@
     "setup": [
         {
             "name": "Small_load_Container",
-            "type":"container",
+            "type": "container",
             "identifier": "quoinedev/python3.7-pandas-alpine",
             "portmapping": "9000:80",
             "setup-commands" : [
@@ -16,7 +16,7 @@
         },
         {
             "name": "High_load_Container",
-            "type":"container",
+            "type": "container",
             "identifier": "quoinedev/python3.7-pandas-alpine",
             "portmapping": "9001:80",
             "setup-commands" : [
