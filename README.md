@@ -1,7 +1,7 @@
 ## Demo
 
-You can see the results from this repository under: https://metrics.green-coding.org/?id=04ca9a03-a6a0-4fa5-ac84-2e0a2a5a1375
-This URL is the version from 05/2022.
+You can see the results from this repository under: https://metrics.green-coding.org/ 
+Please select the project which has the URL of this repository in the "URL" field.
 
 ## Repository Info
 This repository contains a sample software to be measured with
