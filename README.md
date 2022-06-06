@@ -33,6 +33,7 @@ The setup block is the starting point of the usage scenario.
 - "portmapping": Expose a port to other containers for later use (optional)
 - "setup-commands": Commands to be run before actual load testing. Mostly installs will be done here. Note that
 your docker container must support these commands and you cannot rely on a standard linux installation to provide access to /bin (optional)
+- "network": A docker network which allows containers to communicate. Will be deleted and re-created before each run.
 
 ### Flow
 Flow handles the actual load testing
