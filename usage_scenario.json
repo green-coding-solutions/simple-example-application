@@ -29,30 +29,28 @@
             "name": "Load 1000",
             "container": "Small_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 10000000", "detach": true},
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 10000000", "detach": true, "note":"Running ML Code with 10000000 detached"}
             ]
         },
         {
             "name": "Load 10000000",
             "container": "High_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 100000000", "detach": true},
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 100000000", "note":"Running ML Code with 100000000 sync"}
             ]
         },
         {
             "name": "Cleanup small load",
             "container": "Small_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup", "note":"Doing Cleanup on Small_load_Container"}
             ]
         },
         {
             "name": "Cleanup high load",
             "container": "High_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup", "note":"Doing Cleanup on High_load_Container"}
             ]
         }
     ]
