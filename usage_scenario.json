@@ -11,7 +11,7 @@
             "portmapping": "9000:80",
             "setup-commands" : [
                 "whoami",
-                "python3 -m pip install pandas"
+                "python3 -m pip install pandas sklearn"
             ]
         },
         {
@@ -20,7 +20,7 @@
             "identifier": "quoinedev/python3.7-pandas-alpine",
             "portmapping": "9001:80",
             "setup-commands" : [
-                "python3 -m pip install pandas"
+                "python3 -m pip install pandas sklearn"
             ]
         }
     ],
@@ -29,28 +29,28 @@
             "name": "Load 1000",
             "container": "Small_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 10000000", "detach": true, "note":"Running ML Code with 10000000 detached"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load.py run -n 10000000", "detach": true, "note":"Running ML Code with 10000000 detached"}
             ]
         },
         {
             "name": "Load 10000000",
             "container": "High_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py run -n 100000000", "note":"Running ML Code with 100000000 sync"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load.py run -n 100000000", "note":"Running ML Code with 100000000 sync"}
             ]
         },
         {
             "name": "Cleanup small load",
             "container": "Small_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup", "note":"Doing Cleanup on Small_load_Container"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load.py cleanup", "note":"Doing Cleanup on Small_load_Container"}
             ]
         },
         {
             "name": "Cleanup high load",
             "container": "High_load_Container",
             "commands": [
-                {"type": "console", "command": "python3 /tmp/repo/test_load_hash.py cleanup", "note":"Doing Cleanup on High_load_Container"}
+                {"type": "console", "command": "python3 /tmp/repo/test_load.py cleanup", "note":"Doing Cleanup on High_load_Container"}
             ]
         }
     ]
