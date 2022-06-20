@@ -11,7 +11,7 @@
             "portmapping": "9000:80",
             "setup-commands" : [
                 "whoami",
-                "python3 -m pip install pandas sklearn"
+                "python3 -m pip install pandas"
             ]
         },
         {
@@ -20,7 +20,7 @@
             "identifier": "quoinedev/python3.7-pandas-alpine",
             "portmapping": "9001:80",
             "setup-commands" : [
-                "python3 -m pip install pandas sklearn"
+                "python3 -m pip install pandas"
             ]
         }
     ],
