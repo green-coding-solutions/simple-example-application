@@ -7,7 +7,7 @@ This repository contains a Machine-Learning application to be measured with
 the Green Metric Tool.
 
 The software to be measured is arbitrary, as long as it can be orchestrated
-with the format specified in `usage_scenario.yml
+with the format specified in `usage_scenario.yml`
 
 Please see documentation of how to measure your own application on the [Documentation](https://docs.green-coding.org)
 
