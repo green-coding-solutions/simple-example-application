@@ -6,14 +6,16 @@ architecture: linux
 
 services:
   Small_load_Container:
-  image: quoinedev/python3.7-pandas-alpine
-  ports: 9000:80
+    image: quoinedev/python3.7-pandas-alpine
+    ports:
+      - 9000:80
     setup-commands:
       - whoami
       - python3 -m pip install pandas
   High_load_Container:
     image: quoinedev/python3.7-pandas-alpine
-    ports: 9001:80
+    ports:
+      - 9001:80
     setup-commands:
       - python3 -m pip install pandas
 
