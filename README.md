@@ -1,7 +1,3 @@
-## Demo
-
-You can see the results from this repository under: https://metrics.green-coding.org/stats.html?id=aa32ea16-1afa-4195-a2ca-73389ec8c33b
-
 ## Repository Info
 This repository contains a Machine-Learning application to be measured with
 the Green Metric Tool.
@@ -13,6 +9,8 @@ Please see documentation of how to measure your own application on the [Document
 
 ## OpenEnergyBadge
 These badges show the energy cost for running this code on a single machine.
+
+Click on the badge to see the detailed metrics!
 
 - <a href="https://metrics.green-coding.berlin/stats.html?id=00b4d096-5511-444a-ade8-9aaddf3d94aa"><img src="https://api.green-coding.berlin/v1/badge/single/00b4d096-5511-444a-ade8-9aaddf3d94aa?metric=DC"></a>
 
