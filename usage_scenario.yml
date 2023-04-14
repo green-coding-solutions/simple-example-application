@@ -2,7 +2,6 @@
 name: Test-Scenario
 author: Arne Tarara
 version: 1
-architecture: linux
 description: Defined test scenario for used in Green Coding Berlin automated tests.
 
 services:
