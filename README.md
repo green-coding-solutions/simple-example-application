@@ -1,6 +1,6 @@
 ## Demo
 
-You can see the results from this repository under: https://metrics.green-coding.org/stats.html?id=aa32ea16-1afa-4195-a2ca-73389ec8c33b
+You can see the results from this repository under: https://metrics.green-coding.berlin/stats.html?id=5210a15d-3fcb-4ba3-b84d-de86c20839a4
 
 ## Repository Info
 This repository contains a Machine-Learning application to be measured with
@@ -15,5 +15,5 @@ Please see documentation of how to measure your own application on the [Document
 
 - [Green Metrics Tool](https://github.com/green-coding-berlin/green-metrics-tool)
 - [Other example applications](https://github.com/green-coding-berlin/example-applications)
-- [Example Gallery](https://metrics.green-coding.org/data_analysis.html)
-- [Blog](https://www.green-coding.org/blog)
+- [Example Gallery](https://metrics.green-coding.berlin/data_analysis.html)
+- [Blog](https://www.green-coding.berlin/blog)
