@@ -17,7 +17,7 @@ These badges show the energy cost for running this code on a single machine.
 
 Click on the badge to see the detailed metrics!
 
-- <a href="https://metrics.green-coding.berlin/stats.html?id=00b4d096-5511-444a-ade8-9aaddf3d94aa"><img src="https://api.green-coding.berlin/v1/badge/single/00b4d096-5511-444a-ade8-9aaddf3d94aa?metric=RAPL"></a>
+<a href="https://metrics.green-coding.berlin/stats.html?id=5210a15d-3fcb-4ba3-b84d-de86c20839a4"><img src="https://api.green-coding.berlin/v1/badge/single/5210a15d-3fcb-4ba3-b84d-de86c20839a4?metric=RAPL"></a>
 
 ## Other resources
 
