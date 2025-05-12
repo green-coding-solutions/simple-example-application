@@ -10,7 +10,7 @@ services:
     ports:
       - 9001:80
     setup-commands:
-      - python3 -m pip install pandas
+      - command: python3 -m pip install pandas
 
 flow:
   - name: Load 10000000
